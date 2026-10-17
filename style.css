@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  color: #333;
+  padding: 20px;
+}
+
+.container {
+  max-width: 450px;   /* menor que antes (era 600px) */
+  margin: 0 auto;     /* centraliza na tela */
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.logo img {
+  width: 90px;
+  height: auto;
+}
+
+/* Cabeçalho */
+.cabecalho {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.cabecalho h1 {
+  font-size: 2rem;
+  color: #0a2540;
+  margin-bottom: 8px;
+}
+
+.cabecalho p {
+  color: #555;
+  line-height: 1.5;
+}
+
+.linha {
+  border: none;
+  height: 2px;
+  background: #d0d7e2;
+  margin-top: 20px;
+}
+
+/* Subtítulos */
+.subtitulo h2 {
+  font-size: 1.3rem;
+  color: #0a2540;
+  margin-bottom: 12px;
+}
+
+/* "Cartão" branco para o formulário e os recados */
+.formulario,
+.recado {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 25px;
+}
+
+/* Formulário */
+label {
+  display: block;
+  font-weight: 600;
+  margin: 12px 0 6px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccd3dd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #0b5ed7;
+  box-shadow: 0 0 0 3px rgba(11, 94, 215, 0.2);
+}
+
+/* Botão */
+#envio {
+  margin-top: 15px;
+  width: 100%;
+  background: #0b5ed7;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#envio:hover {
+  background: #094db0;
+}
+
+/* Recados */
+.data {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.recado-texto {
+  margin-top: 8px;
+}
+
+/* Rodapé */
+.rodape {
+  text-align: center;
+  color: #555;
+  margin-top: 30px;
+}

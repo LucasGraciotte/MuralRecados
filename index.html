@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Mural de Recados</title>
+</head>
+<body>
+
+    <div class="container">
+
+      <header class="cabecalho">
+
+        <div class="logo">
+          <img src="img/Ícone_de_Nota_Fixada_Azul-removebg-preview.png" alt="Icone do Mural de Recados">
+        </div>
+
+        <div class="cabecalho-topo">
+          <h1>Mural de avisos</h1>
+          <p>Aqui é o espaço onde você pode anotar suas tarefas e lembretes, mantendo tudo organizado para estar sempre atento ao que precisa fazer.</p>
+          <hr class="linha">
+        </div>
+      </header>
+
+      <main class="corpo">
+        <section class="Mural_escreva">
+
+          <div class="subtitulo">
+            <h2>Deixe seu Recado</h2>
+          </div>
+          <div class="formulario">
+            <form id="form_principal">
+              <label for="nome">Seu nome:</label> <br>
+              <input type="text" id="nome" name="nome" placeholder="Ex: João Silva" required> <br>
+              <label for="aviso">Escreva seu aviso:</label> <br>
+              <textarea name="aviso" id="aviso" placeholder="Escreva seus avisos" rows="4"></textarea> <br>
+              <input type="button" value="Envie seu recado" id="envio" name="envio"> <br>
+            </form>
+          </div>
+        </section>
+
+        <section class="mural_veja">
+          <div class="subtitulo">
+            <h2>Recados Recentes</h2>
+          </div>
+
+          <div id="lista-recados">
+            <div class="recado">
+              <strong>Lucas Graciotte</strong> <br>
+              <span class="data">Hoje às 10:30</span>
+              <p class="recado-texto">Sejam bem-vindos ao meu Mural de Recados!</p>
+            </div>
+          </div>
+          
+        </section>
+
+      </main>  
+
+
+      <footer class="rodape">
+
+        <div class="logo">
+          <img src="img/Ícone_de_Nota_Fixada_Azul-removebg-preview.png" alt="Icone do Mural de Recados">
+        </div>
+
+        <div class="rodape_text">
+          <h3>Site criado por Lucas Graciotte</h3>
+          <p>Feito para ajudar e <strong>melhorar</strong> a sua rotina!</p>
+        </div>
+      </footer>
+    </div>
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
